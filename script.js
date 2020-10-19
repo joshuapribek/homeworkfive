@@ -26,11 +26,11 @@ $(function() {
     for (i = 0; i < 24; i++){
         var current = document.getElementsByClassName('hour')[i];
         if (current.textContent == Times[Time]){
-        current.style.backgroundColor = "blue";
+        current.style.backgroundColor = "orange";
     } else if ( bank[i] <= Time ){
-        current.style.backgroundColor = "black";
+        current.style.backgroundColor = "lightgray";
     } else if ( bank[i] > Time ){
-        current.style.backgroundColor = "lightblue"
+        current.style.backgroundColor = "aquamarine"
     };
     };
 
@@ -47,4 +47,4 @@ $(function() {
         alert('save');
         }; 
     });
-});
+}); 
